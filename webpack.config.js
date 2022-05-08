@@ -8,7 +8,7 @@ module.exports = {
       filename: 'index_bundle.js'
    },
    devServer: {
-      inline: true,
+      // inline: true,
       port: 8001
    },
    module: {
@@ -17,9 +17,9 @@ module.exports = {
             test: /\.jsx?$/,
             exclude: /node_modules/,
             loader: 'babel-loader',
-            query: {
-               presets: ['es2015', 'react']
-            }
+            // query: {
+            //    presets: ['es2015', 'react']
+            // }
          }
       ]
    },
